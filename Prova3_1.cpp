@@ -15,8 +15,7 @@ GLfloat a[] = {0.5, 0.0, 0.5, 00};
 GLfloat b[] = {1.0, 1.0, 0.0, 00};
 
 /* --> Construtor da classe <--*/
-Objeto::Objeto(int x, int y, int z)
-{
+Objeto::Objeto(int x, int y, int z){
     posX = x;
     posY = y;
     posZ = z;
@@ -31,8 +30,7 @@ Objeto::~Objeto() {}
 /* --------------------------- */
 
 /* --> Métodos da classe <-- */
-void Objeto::carregarObjeto(string nome)
-{
+void Objeto::carregarObjeto(string nome){
     float fx, fy, fz, a1, a2, a3;
     char letra;
 
@@ -103,8 +101,7 @@ void Objeto::carregarObjeto(string nome)
     file.close();
 }
 
-void Objeto::desenharObjeto(int textIndex, float escala)
-{
+void Objeto::desenharObjeto(int textIndex, float escala){
     int hsamples = 30, vsamples = 30;
     GLfloat l = 0.0;
     glMaterialfv(GL_FRONT, GL_AMBIENT, a);
